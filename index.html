@@ -2,87 +2,98 @@
 <html>
     <head>
         <title>site_tourisme</title>
+        <link rel="stylesheet" href="projet_styl.css">
+        <link rel="stylesheet" href="projet_villes_style.css">
+        <link rel="stylesheet" href="projet_experiences_style.css">
     </head>
     <body>
-        <header>
-        <table cellspacing="20" align="right">
-            <tr>
-        <td></td>
-           <td><a  href="index.html">Acceuil</a></td>
-           <td><a href="apropos.html">A propos</a></td> 
-           <td><a href="index.html#villes">Villes</a></td>
-           <td><a href="inscription.html">Inscription</a></td>
-           <td><a href="index.html#experience">Expériences</a></td>
-           <td><a href="#Contact">Nos contacter</a></td> </tr>
-        </table>    
-    </header>
-    <h1>Guide Morocco</h1>
-    <div >
-        <input class="search" type="text" placeholder="Rechercher">
-    </div>
+        <nav>
+            <div class="left">
+                <p class="logo">Guide Morroco</p>
+            </div>
+            <div class="middle">
+            <a href="index.html">Acceil</a>
+            <a href="apropos.html">A propos</a>
+            <a href="#villes">villes</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="#experience">Expériences</a>
+            <a href="#contact">Contact</a></div>
+            <div class="right">
+                <input class="search" type="text" placeholder="Rechercher">
+            </div>
             
         </nav>
-        <section>
-            <h1>Morocco :</h1>
+        <section class="sec1">
+            <p class="title" id="guid">Morocco</p>
             <p class="cont">Le Maroc est une terre de contrastes et de diversité, où tradition et modernité se rencontrent harmonieusement. Des paysages majestueux des montagnes de l'Atlas aux vastes étendues du désert du Sahara, chaque coin du Maroc offre une aventure unique. Plongez dans la richesse culturelle de ses villes impériales, savourez une cuisine délicieuse et laissez-vous envoûter par l'hospitalité chaleureuse de ses habitants. Bienvenue au Maroc, un pays où chaque visite est une expérience inoubliable.</p>
-            <button onclick="window.location.href='maroc_description.html';">Decouvrir</button>
+            <button onclick="window.location.href='decouvrir/maroc_description.html';">Decouvrir</button>
         </section>
-        <section>
-            <UL>
-                <h1 id="villes" ALIGN="center">Villes du maroc</h1>
-                <li>
-                    <div> 
-                        <h2>Agadir : la perle du sud <a href="AGADIR.html">...Savoir plus</a></H2>
-                        <img src="Agadir.jpg"width="1000" height="500" >
-                    </div>
-                </li>
-                <li>
-                    <div> 
-                        <h2>Tanger : La Porte de l'Atlantique<a href="tanger.html">...Savoir plus</a></H2>
-                        <img src="tanger.jpg" width="1000" height="500">
-                        <p></p>
-                    </div>
-                </li>
-                <li>
-                    <div> 
-                        <h2>Rabat :ville lumière <a href="Rabat.html">...Savoir plus</a></H2>
-                        <img src="rabat.jpeg" width="1000" height="500">
-                    </div>
-                </li>
-                <li>
-                    <div> 
-                        <h2>Marrakech : la ville rouge<a href="marrakech.html">...Savoir plus</a></H2>
-                        <img src="marrakech.jpeg"  width="1000" height="500">
-                    </div>
-                </li>
-               
-         </UL>   
+        <section class="sec2">
+         <h1 id="villes">Villes du maroc</h1>
+        <div class="container">
+            <div class="tanger">
+                <img src="tanger.jpg" >
+                <p>Tanger</p>
+                <p><a href="chefchaouen.html">Savoir plus</a></p>
+            </div>
+
+            <div class="rabat">
+                <img src="rabat.jpeg" >
+                <p>Rabat</p>
+                <p> <a href="">Savoir plus</a></p>
+            </div>
+
+            <div class="marrakech">
+                <img src="marrakech.jpeg">
+                <p>Marrakech</p>
+                <p><a href="">Savoir plus</a></p>
+            </div>
+
+            <div class="agadir">
+                <img src="Agadir.jpg" >
+                <p>Agadir</p>
+                <p><a href="">Savoir plus</a></p>
+            </div>
+        </div>
+            
         </section>
-        <section>
-            <h1 id="experience">Expériences</h1>
-        <ul>
-            <div>
-                <il>
+        <section class="sec3">
+            <h1 id="experiences">Expériences</h1>
+            <div class="container2">
+            <div class="gastronomie">
                 <h2>La gastronomie marocaine</h2>
-                <img src="tajine1.jpeg"width="1000" height="500">
-                <p>La gastronomie marocaine est un festival de saveurs, de couleurs et d'arômes, reflet de l'histoire riche et des influences culturelles variées du Maroc. Ancrée dans des traditions millénaires, elle est célèbre pour sa diversité et son usage savoureux des épices.<a href="gastronomie.html">...Lire la suite</a></p>
-            </il>
+                <div class="photo">
+                    <img src="tajine.jpg" >
+                </div>
+                <div class="text">
+                     <p>La gastronomie marocaine est un festival de saveurs, de couleurs et d'arômes, reflet de l'histoire riche et des influences culturelles variées du Maroc. Ancrée dans des traditions millénaires, elle est célèbre pour sa diversité et son usage savoureux des épices.</p>
+                     <button><a href="html_gastronomie/gastronomie.html">Lire la suite</a></p>
+                </div>
             </div>
-            <div>
-                <il>
-                <h2>Plages</h2>
-                <img src="plages.jpeg"  width="1000" height="500">
-                <p>Le Maroc, bordé par l'océan Atlantique à l'ouest et la mer Méditerranée au nord, offre une multitude de plages magnifiques qui attirent les visiteurs du monde entier. Des plages sauvages et isolées aux stations balnéaires animées, chaque plage a son propre charme et caractère unique.<a href="plages.html">...Lire la suite</a></p>
-            </il>
+           
+            <div class="plages">
+                 <h2>Plages</h2>
+                 <div class="photo">
+                    <img src="plages.jpeg" onclick="window.location.href='maroc_description.html';">
+                  </div>
+                <div class="text">
+                     <p>Le Maroc, bordé par l'océan Atlantique à l'ouest et la mer Méditerranée au nord, offre une multitude de plages magnifiques qui attirent les visiteurs du monde entier. Des plages sauvages et isolées aux stations balnéaires animées, chaque plage a son propre charme et caractère unique.</p>
+                     <button><a href="html_plages/plages.html">Lire la suite</a></button>
+                </div>
+                
             </div>
-            <div>
-                <il>
+            
+            <div class="nature">
                 <h2>Nature</h2>
-                <img src="natur1.jpeg"  width="1000" height="500">
-                <p>Le Maroc est un pays d'une diversité naturelle exceptionnelle, où chaque région offre des paysages uniques et époustouflants.<a href="nature.html">...Lire la suite</a></p>
-                </il>
+                <div class="photo">
+                      <img src="nature.jpeg" onclick="window.location.href='maroc_description.html';">
+                </div>
+                <div class="text">
+                     <p>Le Maroc est un pays d'une diversité naturelle exceptionnelle, où chaque région offre des paysages uniques et époustouflants.</p>
+                     <button><a href="html_nature/nature.html">Lire la suite</a></button>
+               </div>
             </div>
-        </ul>
+            </div>
         </section>
         <section>
             <div>
@@ -96,8 +107,8 @@
             </div>
         </section>
         <footer>
-            <a href="index.html">Acceuil</a>  <a href="apropos.html">A propos</a>   <a href="index.html#villes">Villes</a>   <a href="index.html#experience">Expériences</a>   <a href="inscription.html">Inscription</a>   <a href="#Contact">Nos contacter</a>
-        
+            <a href="index.html">Acceuil</a>   <a href="#villes">Villes</a>   <a href="#experiences">Expériences</a>   <a href="inscription.html">Inscription</a>   <a href="#Contact">Nos contacter</a>
+
         </footer>
     </body>
 </html>
