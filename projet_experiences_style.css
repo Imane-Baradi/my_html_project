@@ -1,0 +1,93 @@
+
+.sec3{
+    background-color: rgb(85, 1, 1);
+    padding-top: 20px;
+    margin-top: 0px;
+    
+    
+}
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+h2{
+    text-align: center;
+    color: rgb(235, 110, 8);
+    text-shadow: 5px 5px 8px black;
+    font-size: 30px;
+    font-weight:bold;
+}
+.gastronomie{
+   width: 400px;
+   margin-left: 30px;
+  
+}
+.photo{
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+   
+}
+
+.text p{
+   font-size: 20px;
+   font-family: arial;
+   width: 300px;
+   height: 250px;
+   text-align: center;
+   margin-left: 50px;
+   color: burlywood;
+}
+
+.gastronomie img{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    box-shadow: 15px 15px 15px rgb(black, black, black);
+}
+
+.plages{
+    width: 400px;
+    margin-left: 15px;
+}
+.plages img{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    box-shadow: 15px 15px 15px rgb(black, black, black);
+}
+
+.nature{
+    width: 400px;   
+}
+.nature img{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    box-shadow: 15px 15px 15px rgb(black, black, black);
+}
+#experiences{
+    color: rgb(247, 131, 77);
+    text-align: center;
+    text-shadow: 5px 5px 8px black;
+    font-size: 50px;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sec3 button{
+    background-color: rgb(235, 110, 8);
+    color:rgb(2, 1, 0) ;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+    cursor:pointer;
+    text-decoration: none;
+}
