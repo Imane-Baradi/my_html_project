@@ -1,0 +1,261 @@
+nav{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(158, 9, 9);
+    margin: 0px;
+
+}
+.logo{
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 15px;
+    color: rgb(253, 107, 23);
+    font-weight: bold;
+    font-family: fantasy;
+    text-shadow: 5px 5px 5px black;
+
+}
+.right{
+    display: flex;
+    width: 300px;
+    margin-left: 10px;
+}
+.right img:active{
+    opacity: 0.7;
+}
+.search{
+    width: 250px;
+    height: 25px;
+    margin: 5px;
+    
+}
+.middle{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    max-width: 900px;
+}
+.middle a{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    text-decoration: none;
+    color: rgb(253, 192, 101);
+    margin-left: 5px;
+    padding: 10px;
+    margin-bottom: none;
+}
+.middle a:hover{
+    background-color:rgb(253, 192, 101) ;
+    color:rgb(204, 81, 9)  ;
+}
+.middle:hover a:not(:hover){
+    opacity: .5;
+    transform: scale(.80);
+}
+
+.left{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    background-image: url(photo_nature.avif);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding-top: 10px;
+    justify-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 100px;
+    position: relative;
+    height: 600px;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.container h1{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: rgb(253, 192, 101);
+    font-size: 100px;
+    margin: 0;
+    text-shadow: 5px 5px 5px black;
+    display: block;
+    margin-top: 180px;
+}
+.container p{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: rgb(253, 192, 101);
+    margin: 0;
+    text-shadow: 5px 5px 5px black;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.montagnes{
+    background-image: url(natur1.jpeg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding-top: 10px;
+    justify-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:700px ;
+}
+
+.title1{
+    text-align: center;
+    color: rgb(2, 223, 2);
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 5px 5px 5px black;
+    margin-top: 150px;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    height: 700px;
+    margin-top: 0px;
+    
+}
+.text1 p{
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(199, 247, 199);
+    text-shadow: 5px 5px 5px black;
+    backdrop-filter: blur(2px);
+    height: 700px;
+    margin-top: 150px;
+    font-weight: bold;
+}
+.title1 h2{
+    margin-top: 250px;
+}
+.text1 {
+    margin-top: 0px;
+    height: 700px;
+    backdrop-filter: blur(2px);
+    width: 700px;
+
+
+}
+.desert{
+    background-image: url(n2.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding-top: 10px;
+    justify-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:700px ;
+}
+.title2{
+    text-align: center;
+    color: rgb(9, 127, 223);
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 5px 5px 5px black;
+    margin-top: 150px;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    height: 700px;
+    margin-top: 0px;
+    
+}
+.text2 p{
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(195, 233, 255);
+    text-shadow: 5px 5px 5px black;
+    backdrop-filter: blur(2px);
+    height: 700px;
+    margin-top: 130px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.title2 h2{
+    margin-top: 250px;
+    width: 700px;
+}
+.text2 {
+    margin-top: 0px;
+    height: 700px;
+    backdrop-filter: blur(2px);
+}
+.cotes{
+    background-image: url(n3.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding-top: 10px;
+    justify-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:700px ;
+}
+.title3{
+    text-align: center;
+    color: rgb(236, 156, 36);
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 5px 5px 5px black;
+    margin-top: 150px;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    height: 700px;
+    margin-top: 0px;
+    
+}
+.text3 p{
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 221, 159);
+    text-shadow: 5px 5px 5px black;
+    backdrop-filter: blur(2px);
+    height: 700px;
+    margin-top: 130px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.title3 h2{
+    margin-top: 250px;
+    width: 700px;
+}
+.text3 {
+    margin-top: 0px;
+    height: 700px;
+    backdrop-filter: blur(2px);
+}
