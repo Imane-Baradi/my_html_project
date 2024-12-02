@@ -3,7 +3,6 @@ nav{
     display: flex;
     flex-direction: row;
     background-color: rgb(155, 60, 5);
-    text-shadow: 5px 5px 5px black;
 
 }
 .logo{
@@ -21,6 +20,9 @@ nav{
     display: flex;
     width: 300px;
     margin-left: 10px;
+}
+.right img:active{
+    opacity: 0.7;
 }
 .search{
     width: 250px;
@@ -116,10 +118,11 @@ button{
     cursor:pointer;
     margin-left: 100px;
     margin-top: 50px;
+    transition: background-color 0.5s ;
 }
 button:hover{
-    background-color:rgb(204, 81, 9) ;
-    color: white;
+    background-color:rgb(255, 153, 95) ;
+    color: rgb(155, 60, 5);
 }
 button:active{
     opacity: 0.5;
