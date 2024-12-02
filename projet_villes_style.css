@@ -2,7 +2,7 @@
     background-color:burlywood;
     padding-top: 20px;
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 90px;
 }
 
 #villes{
@@ -17,27 +17,61 @@
 .container{
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 30px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    
+    scroll-behavior: smooth;
 }
-.tanger{
-    scroll-snap-align:center;
-    min-width: 50%;
-    box-shadow: 15px 15px 15px rgb(black, black, black);
+.tanger {
+    scroll-snap-align: center;
+    min-width: 60%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
 }
-.tanger img{
+
+.tanger img {
+    display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius:20px;
-    box-shadow: 5px 5px 8px  black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
 }
+
+.tanger img:hover {
+    filter: brightness(50%);
+    transform: scale(1.05);
+}
+
+.tanger p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    color: rgb(253, 167, 38);
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    /*transition: filter 0.3s ease, transform 0.3s ease;*/
+}
+
+/*.tanger p:hover {
+    filter: brightness(80%);
+    transform: translate(-50%, -50%) scale(1.1);
+}*/
+
 .rabat{
     scroll-snap-align:center;
-    min-width: 50%;
-    
+    min-width: 60%;
+    display: inline-block;
+    position: relative;
+    border-radius:20px;
+    overflow: hidden;
 }
 .rabat img{
     width: 100%;
@@ -45,28 +79,88 @@
     object-fit: cover;
     border-radius:20px;
     box-shadow: 5px 5px 8px  black;
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease; 
+    cursor: pointer;
+
+}
+.rabat img:hover{
+    filter: brightness(50%); 
+    transform: scale(1.05); 
+}
+.rabat p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%); 
+    color: rgb(253, 167, 38);
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 .marrakech{
     scroll-snap-align:center;
-    min-width: 50%;
-   
+    min-width: 60%;
+   display: inline-block;
+   position: relative;
+   border-radius:20px;
+    overflow: hidden;
 }
 .marrakech img{
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius:20px;
     box-shadow: 5px 5px 8px  black;
+    transition: filter 0.3s ease, transform 0.3s ease; 
+    cursor: pointer;
+
+}
+.marrakech img:hover{
+    filter: brightness(50%); 
+    transform: scale(1.05); 
+}
+.marrakech p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%); 
+    color: rgb(253, 167, 38);
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 .agadir{
     scroll-snap-align:center;
-    min-width: 50%;
-    
+    min-width: 60%;
+    display: inline-block;
+    position: relative;
+    border-radius:20px;
+    overflow: hidden;
 }
 .agadir img{
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius:20px;
     box-shadow: 5px 5px 8px  black;
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+
+}
+.agadir img:hover{
+    filter: brightness(50%); 
+    transform: scale(1.05); 
+}
+.agadir p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%); 
+    color: rgb(253, 167, 38);
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
