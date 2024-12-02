@@ -8,7 +8,7 @@ function afficherBienvenue() {
 
 console.log("Chemin actuel :", window.location.pathname);
 
-if (window.location.pathname.endsWith("tourisme.html")) {
+if (window.location.pathname.endsWith("index.html")) {
     window.onload = afficherBienvenue;
 }
 
