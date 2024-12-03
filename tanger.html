@@ -1,162 +1,247 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tanger</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="tanger.css">
+        <link rel="stylesheet" href="contact_style.css">
+        <link rel="stylesheet" href="footer_style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+        <title>tanger</title>
     </head>
     <body>
         <header>
-        <table cellspacing="20" align="right">
-            <tr>
-        <td></td>
-           <td><a  href="index.html">Acceuil</a></td>
-           <td><a href="apropos.html">A propos</a></td> 
-           <td><a href="index.html#villes">Villes</a></td>
-           <td><a href="inscription.html">Inscription</a></td>
-           <td><a href="index.html#experience">Expériences</a></td>
-           <td><a href="#Contact">Nos contacter</a></td> </tr>
-        </table>    
+        <nav>
+            <div class="left">
+                <p class="logo">Guide Morocco</p>
+            </div>
+            <div class="middle">
+                <a href="#guid">Acceuil</a>
+                <a href="apropos.html">A propos</a>
+                <a href="#villes">Villes</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="#experience">Expériences</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="right">
+                <input class="search" type="text" placeholder="Rechercher">
+            </div>
+        </nav>                    
     </header>
-    <h1>Guide Morocco</h1>
-    <div >
-        <input class="search" type="text" placeholder="Rechercher">
-    </div>
-      
-<h1 >Tanger : La Porte de l'Atlantique</h1>
-<H2>description</H2>
-<section>
-    <article>   
-        Tanger est une ville fascinante qui allie la culture maure à l'influence européenne. Située à l'extrême nord du Maroc, Tanger est la porte d'entrée du pays et du continent africain pour les visiteurs du monde entier. À travers ses rues étroites et ses maisons blanches, nous pouvons découvrir une variété d'attractions touristiques qui captent notre attention et la remplissent de fascination. La mer Méditerranée est toujours à proximité.  
-    </article>
-    <video src="tanger-FR-with-subtitles (2).mp4" width="200"controls ></video>
-</section>
+    <section class="home">
+        <div class="contents">
+            <h1 >Tanger <br><span>La Porte de l'Atlantique</span></h1>
+            <p>
+                Tanger est une ville fascinante qui allie la culture maure à l'influence européenne. Située à l'extrême nord du Maroc, Tanger est la porte d'entrée du pays et du continent africain pour les visiteurs du monde entier. À travers ses rues étroites et ses maisons blanches, nous pouvons découvrir une variété d'attractions touristiques qui captent notre attention et la remplissent de fascination. La mer Méditerranée est toujours à proximité.  
+            </p>
+            <button onclick="playVideo()">Video à voir</button>
+            <video id="myVideo" controls>
+                <source src="tanger-FR-with-subtitles (2).mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </div>
+    </section> 
 
-<h2>Monumens historiques :</h2>
-<section>
-    <article> 
-        <ul>
-            <li><h3>Kasbah :</h3>
+    <section class="monuments"> 
+    <div > 
+    <h1>Monumens historiques</h1>
+    <h3>Découvrez les trésors historiques d'Agadir, où chaque monument raconte une histoire fascinante !<br><span>(flip cards)</span></h3>
+    </div>
+    <div class="cards-cont">
+    <div class="card">
+        <div class="face front">
+            <img src="Kasbah tanger.jpg" alt="HHH">
+            <h3>Kasbah</h3>
+        </div>
+        <div class="face back">
+            <h3>Kasbah</h3>
+            <p>
                 La Kasbah est la partie la plus ancienne et la plus historique de la ville, où l'on peut admirer l'architecture marocaine typique et la vue sur le port et le continent européen. La Kasbah abrite également le palais du sultan, transformé en musée où sont exposés des objets, des tapis et des bijoux de l'époque. Une autre attraction de la Kasbah est le musée de la Kasbah, qui raconte l'histoire de Tanger et de la région à travers des expositions d'art, d'archéologie et d'ethnographie.
-                <table>
-                    <tr>
-                     
-                        <td><img src="T2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                        <td><img src="T3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                    </tr>
-                </table>   
-            </li>
-            <li><h3>Tombes phéniciennes:</h3></li>
-            Les tombes phéniciennes sont une série de chambres funéraires creusées dans la roche, datant du VIe siècle avant J.-C. Les Phéniciens étaient un ancien peuple qui naviguait sur la Méditerranée et avait établi une colonie à Tanger. Les Phéniciens étaient un peuple ancien qui naviguait sur la Méditerranée et qui a établi une colonie à Tanger. Les tombes phéniciennes témoignent de leur présence et de leur culture dans la ville. Les tombes sont situées sur une colline près du Cap Malabata et offrent une vue panoramique sur la mer et la baie de Tanger.
-                <table>
-                    <tr>
-                      
-                        <td><img src="P2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                        <td><img src="P3.jfif" alt="" width="200" height="200"></td>
-                    </tr>
-                </table>
-            
-            <li><h3>La Place du 9 Avril 1947 (Grand Socco):</h3></li>
-            Le Grand Socco est la place principale de Tanger, où l'on peut sentir le pouls de la ville et observer la diversité des gens et des cultures qui s'y côtoient. Le Grand Socco est le point de rencontre entre la Médina, la partie ancienne de la ville, et la Ville Nouvelle, la partie moderne. Le Grand Socco est également le site du marché en plein air, où l'on trouve de tout, des fruits et légumes aux vêtements et à l'artisanat. Le Grand Socco est un lieu vivant et coloré qui reflète l'esprit de Tanger.
-                <table>
-                    <tr>
-                       
-                        <td><img src="SK2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                        <td><img src="SK33.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                    </tr>
-                </table>  
-            </ul>      
-    </article>
-</section>
-<h2>Activités :</h2>
-<section>
-    <article>       
-        <ul>
-            <li><h3>Les grottes d´Hércules:</h3></li>
-            Situées au cap Spartel, elles sont l'une des plus grandes attractions de la ville! De merveilleuses grottes de calcaire naturel qui remplissent les yeux de vos visiteurs. En plus de toute leur beauté, ils sont également l'endroit idéal pour profiter des plus beaux paysages de Tanger! Plus que de la beauté et des paysages, les parois rocheuses racontent une histoire mythologique!
-            <table>
-                <tr>
-                    
-                    <td><img src="HER2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                    <td><img src="tanger.jpg" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Le Musée de la Légation Américaine:</h3></li>
-            un lieu incontournable pour comprendre l’histoire des relations entre le Maroc et les États-Unis. Saviez-vous que le Maroc a été le premier pays à reconnaître l’indépendance des États-Unis ? Ce musée est installé dans l’ancienne légation américaine, une bâtisse datant de 1821, et regorge d’artefacts historiques et de documents précieux. C’est une petite visite mais qui vaut le détour, surtout pour les passionnés d’histoire. Et ne manquez pas de jeter un œil aux œuvres d’art exposées dans les salles !
-            <table>
-                <tr>
-                   
-                    <td><img src="AMER2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                    <td><img src="AMER3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Cap Spartel:</h3></li>
-            situé à l’extrémité nord-ouest du Maroc, est un lieu où la nature est reine. Là où la Méditerranée rencontre l’Atlantique, ce promontoire offre une vue incroyable sur les deux mers. Le phare de Cap Spartel, construit au 19e siècle, est un repère historique et un excellent point de départ pour une petite randonnée. C’est aussi un endroit populaire pour observer le coucher du soleil, donc n’oubliez pas votre appareil photo. Si vous avez des enfants, ils seront ravis d’explorer cet endroit sauvage.
-            <table>
-                <tr>
-                    <td><img src="CAP3.jfif" alt="Description de l'image 1" width="200" height="200"></td>
-                    
-                </tr>
-            </table>
-           
-            <li><h3> Parc Perdicaris:</h3></li>
-            un magnifique parc naturel situé sur les hauteurs de Tanger. Ce site, très prisé des locaux et des visiteurs, est célèbre pour ses sentiers ombragés, ses forêts luxuriantes de pins et d’eucalyptus, et ses vues panoramiques exceptionnelles sur le détroit de Gibraltar et l’océan Atlantique. Le parc porte le nom de Ion Perdicaris, un diplomate américain qui y résida au début du XXe siècle. Idéal pour les promenades, les pique-niques et les randonnées, Rmilat est une oasis de nature et de sérénité aux portes de la ville.
-            <table>
-                <tr>
-                    
-                    <td><img src="Parc2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                    <td><img src="Parc3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-        </ul> 
-    </article>
-</section>
-<h2>Cafés et restaurants :</h2>
-<section>
-    <article>        
-        <ul>
-            <li><h3>Café Hafa</h3></li>
-            Le Café Hafa est un café historique qui existe depuis 1921 et qui est célèbre pour avoir été fréquenté par des personnalités telles que Paul Bowles, William Burroughs, Jimi Hendrix et les Beatles. Le Café Hafa est l'endroit idéal pour se détendre et déguster un thé à la menthe marocain tout en admirant la vue imprenable sur le détroit de Gibraltar. Le Café Hafa a un style simple et authentique, avec des tables et des chaises en plastique réparties sur plusieurs terrasses le long de la falaise.
-            <table>
-                <tr>
-                    
-                    <td><img src="HAFA2.jfif"  width="200" height="200"></td>
-                    <td><img src="HAFA3.jfif"  width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Café Baba</h3></li>
-            Ce café légendaire était le lieu de rencontre favori des écrivains, artistes et musiciens qui passaient par Tanger dans les années 50 et 60, comme Paul Bowles, William Burroughs, Jack Kerouac, Brion Gysin et les Rolling Stones. Le Café Baba conserve son atmosphère bohème et authentique, avec un décor coloré et des vues spectaculaires sur la médina et le port. Le Café Baba est situé dans la rue Sidi Hossain, près de la Kasbah.
-            <table>
-                <tr>
-                   
-                    <td><img src="BAB2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                    <td><img src="BAB3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Café aux 3 portes</h3></li>
-            un charmant lieu niché dans la Kasbah de Tanger, offrant une atmosphère tranquille avec une vue magnifique sur la mer Méditerranée. Réputé pour son décor traditionnel et ses boissons locales comme le thé à la menthe, ce café est idéal pour une pause authentique et relaxante après une balade dans les ruelles de la Médina.
-            <table>
-                <tr>
-                  
-                    <td><img src="3P3.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                    <td><img src="3P2.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-           
-        </ul>
-    </article>
-</section>
-<section>
-    <div>
-        <h1 id="Contact">Nos contacter</h1>
-        <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">Email</a></li>
-        </ul>
+            </p>
+        </div>
     </div>
-</section>
-<footer>
-    <a href="index.html">Acceuil</a>  <a href="apropos.html">A propos</a>   <a href="index.html#villes">Villes</a>   <a href="index.html#experience">Expériences</a>   <a href="inscription.html">Inscription</a>   <a href="#Contact">Nos contacter</a>
+    <div class="card">
+        <div class="face front">
+            <img src="Tombes phéniciennes.jpg" alt="HHH">
+            <h3>Tombes phéniciennes</h3>
+        </div>
+        <div class="face back">
+            <h3>Tombes phéniciennes</h3>
+            <p>
+                Les tombes phéniciennes sont une série de chambres funéraires creusées dans la roche, datant du VIe siècle avant J.-C. Les Phéniciens étaient un ancien peuple qui naviguait sur la Méditerranée et avait établi une colonie à Tanger. Les Phéniciens étaient un peuple ancien qui naviguait sur la Méditerranée et qui a établi une colonie à Tanger. Les tombes phéniciennes témoignent de leur présence et de leur culture dans la ville. Les tombes sont situées sur une colline près du Cap Malabata et offrent une vue panoramique sur la mer et la baie de Tanger.
+            </p>
+        </div>
+    </div>
 
-</footer>
+    <div class="card">
+        <div class="face front">
+            <img src="grand socco.jpg" alt="HHH">
+            <h3>Grand Socco</h3>
+        </div>
+        <div class="face back">
+            <h3>Grand Socco</h3>
+            <p>
+                Le Grand Socco est la place principale de Tanger, où l'on peut sentir le pouls de la ville et observer la diversité des gens et des cultures qui s'y côtoient. Le Grand Socco est le point de rencontre entre la Médina, la partie ancienne de la ville, et la Ville Nouvelle, la partie moderne. Le Grand Socco est également le site du marché en plein air, où l'on trouve de tout, des fruits et légumes aux vêtements et à l'artisanat. Le Grand Socco est un lieu vivant et coloré qui reflète l'esprit de Tanger.
+            </p>
+        </div>
+    </div>
+</div>
+    </section>
+
+
+    <section class="hh">
+        <div class="titre"> 
+            <h1>Activités</h1>
+            <h3>Vivez des moments mémorables à Agadir, où chaque activité révèle la richesse de sa culture et nature!</h3>
+        </div> 
+        <div class="slider">
+            <div class="list">
+    
+                <div class="item">
+                    <img src="grottes d´Hércules.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">grottes Hércules</div>
+                        <div class="description">
+                            Situées au cap Spartel, elles sont l'une des plus grandes attractions de la ville! De merveilleuses grottes de calcaire naturel qui remplissent les yeux de vos visiteurs. En plus de toute leur beauté, ils sont également l'endroit idéal pour profiter des plus beaux paysages de Tanger! Plus que de la beauté et des paysages, les parois rocheuses racontent une histoire mythologique!
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/ervNxG4ZMQ4fiffB6">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="Musée de la Légation Américaine.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Musée Américain</div>
+                        <div class="description">
+                            un lieu incontournable pour comprendre l’histoire des relations entre le Maroc et les États-Unis. Saviez-vous que le Maroc a été le premier pays à reconnaître l’indépendance des États-Unis ? Ce musée est installé dans l’ancienne légation américaine, une bâtisse datant de 1821, et regorge d’artefacts historiques et de documents précieux. C’est une petite visite mais qui vaut le détour, surtout pour les passionnés d’histoire. Et ne manquez pas de jeter un œil aux œuvres d’art exposées dans les salles !
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/mYhwUKfZmSwq2cFXA">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="Cap Spartel.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Cap Spartel </div>
+                        <div class="description">
+                            situé à l’extrémité nord-ouest du Maroc, est un lieu où la nature est reine. Là où la Méditerranée rencontre l’Atlantique, ce promontoire offre une vue incroyable sur les deux mers. Le phare de Cap Spartel, construit au 19e siècle, est un repère historique et un excellent point de départ pour une petite randonnée. C’est aussi un endroit populaire pour observer le coucher du soleil, donc n’oubliez pas votre appareil photo. Si vous avez des enfants, ils seront ravis d’explorer cet endroit sauvage.
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/9uMVghWKP89YjNba7">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="Parc Perdicaris.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Parc Perdicaris</div>
+                        <div class="description">
+                            un magnifique parc naturel situé sur les hauteurs de Tanger. Ce site, très prisé des locaux et des visiteurs, est célèbre pour ses sentiers ombragés, ses forêts luxuriantes de pins et d’eucalyptus, et ses vues panoramiques exceptionnelles sur le détroit de Gibraltar et l’océan Atlantique. Le parc porte le nom de Ion Perdicaris, un diplomate américain qui y résida au début du XXe siècle. Idéal pour les promenades, les pique-niques et les randonnées, Rmilat est une oasis de nature et de sérénité aux portes de la ville.
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/cJoggWssK7VJgj1h8">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="thumbnail">
+    
+                <div class="item">
+                    <img src="grottes d´Hércules.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Musée de la Légation Américaine.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Cap Spartel.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Parc Perdicaris.jpg" alt="">
+                </div>
+    
+            </div>
+    
+    
+            <div class="nextPrevArrows">
+                <button class="prev"> < </button>
+                <button class="next"> > </button>
+            </div>
+    
+    
+        </div>
+    </section> 
+    <section class="cafe">
+        <div class="titreFIN"> 
+            <h1>Cafées et restaurants</h1>
+            <h3>Savourez des instants délicieux à Agadir, où chaque café et restaurant vous plonge dans une expérience culinaire unique!</h3>
+        </div>
+        <div class="resto">
+            <div class="carte">
+                <img src="cafe hafa.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Café Hafa</h3>
+                    <p>
+                        Le Café Hafa est un café historique qui existe depuis 1921 et qui est célèbre pour avoir été fréquenté par des personnalités telles que Paul Bowles, William Burroughs, Jimi Hendrix et les Beatles. Le Café Hafa est l'endroit idéal pour se détendre et déguster un thé à la menthe marocain tout en admirant la vue imprenable sur le détroit de Gibraltar. Le Café Hafa a un style simple et authentique, avec des tables et des chaises en plastique réparties sur plusieurs terrasses le long de la falaise.
+                    </p>
+                    <a href="https://maps.app.goo.gl/SXftgTWRARttLi1Z8" class="btn">Localisation</a>
+                </div>
+            </div>
+            <div class="carte">
+                <img src="cafe baba.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Café Baba</h3>
+                    <p>
+                        Ce café légendaire était le lieu de rencontre favori des écrivains, artistes et musiciens qui passaient par Tanger dans les années 50 et 60, comme Paul Bowles, William Burroughs, Jack Kerouac, Brion Gysin et les Rolling Stones. Le Café Baba conserve son atmosphère bohème et authentique, avec un décor coloré et des vues spectaculaires sur la médina et le port. Le Café Baba est situé dans la rue Sidi Hossain, près de la Kasbah.
+                    </p>
+                    <a  href="https://maps.app.goo.gl/EJayeL6nrK47Ts5R6" class="btn">Localisation</a>
+                </div>
+            </div>
+            <div class="carte">
+                <img src="Café aux 3 portes.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Café aux 3 portes</h3>
+                    <p>
+                        un charmant lieu niché dans la Kasbah de Tanger, offrant une atmosphère tranquille avec une vue magnifique sur la mer Méditerranée. Réputé pour son décor traditionnel et ses boissons locales comme le thé à la menthe, ce café est idéal pour une pause authentique et relaxante après une balade dans les ruelles de la Médina.
+                    </p>
+                    <a href="https://maps.app.goo.gl/euHZUiVLHsVP7SjKA" class="btn">Localisation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h1 id="Contact">Contact</h1>
+        <div class="contact1">
+            
+                <div class="instagram"><img src="instagram.png" onclick="lien('https://www.instagram.com/')"><br><a href="https://www.instagram.com/" target="_blank">Instagram</a></div>
+                <div class="facebook"><img src="facebook.png" onclick="lien('https://fr-fr.facebook.com/')"><br><a href="https://fr-fr.facebook.com/" target="_blank">Facebook</a></div>
+                <div class="gmail"><img src="Gmail.png" onclick="lien('https://mail.google.com/mail/u/0/')"><br><a href="https://mail.google.com/mail/u/0/" target="_blank">Email</a></div>
+                <div class="linkedin"><img src="linkedin.png" onclick="lien('https://www.linkedin.com/feed/')"><br><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></div>
+
+            
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <a href="index.html">Acceil</a>
+            <a href="apropos.html">A propos</a>
+            <a href="#villes">villes</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="#experience">Expériences</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+<script src="tanger.js"></script>
     </body>
 </html>
