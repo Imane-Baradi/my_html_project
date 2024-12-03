@@ -1,46 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Inscription</title>
-    </head>
-    <body>
-        <header>
-            <table cellspacing="20" align="right">
-                <tr>
-            <td></td>
-               <td><a  href="index.html">Acceuil</a></td> 
-               <td><a href="index.html#villes">Villes</a></td>
-               <td><a href="inscription.html">Inscription</a></td>
-               <td><a href="index.html#experience">Expériences</a></td>
-               <td><a href="#Contact">Nos contacter</a></td> </tr>
-            </table>    
-        </header>
-        <h1>Guide Morocco</h1>  
-        <section>
-            <h1>Sing Up</h1>
-            <label for="nom"> </label>
-                <input type="text" name="nom" id="nom" placeholder="Full name" size="30" maxlength="20"/><br><br>
-            <label for="email"></label>
-                <input type="email" email="email" id="email" placeholder="Email Address" size="30" required/><br><br>
-            <label for="code"></label>
-                <input type="password" password="code" id="code" placeholder="Password" size="30"/><br><br>
-            <label for="code"></label>
-                <input type="password" password="code" id="code" placeholder=" Confirm Password" size="30"/><br><br>
-            <button>Sing Up</button><br>Already have an account?<a href="">Log in</a><br><br>
-            <button>Sing Up with Google</button><br><br>
-            <button>Sing Up with Facebook</button>
-        </section>
-        <section>
-            <div>
-                <h1 id="Contact">Nos contacter</h1>
-                <ul>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">LinkedIn</a></li>
-                    <li><a href="">Email</a></li>
-                </ul>
-            </div>
-        </section>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="inscreption.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <section class="login">
+                <h1>Connexion</h1>
+                <form>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Mot de passe</label>
+                    </div>
+                    <div class="forgot">
+                        <input type="checkbox">
+                        <a href="">Mot de passe oublié?</a>
+                    </div>
+                    <button>connexion</button>
+                    <div class="register-option">
+                        <span>Pas de compte?</span>
+                        <a href="" id="switch-to-register">Inscrivez-vous</a>
+                    </div>
+                </form>
+            </section>
+            <section class="registrer">
+                <h1>Inscreption</h1>
+                <form>
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" required>
+                        <label for="">Nom</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Mot de passe</label>
+                    </div>
 
-    </body>
+                    <button>Inscreption</button>
+                    <div class="register-option">
+                        <span>Déjà un compte?</span>
+                        <a href="" id="switch-to-login">Connectez-vous</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <div id="cookie-banner">
+        <p>Nous utilisons des cookies sur notre site. Acceptez-vous?</p>
+        <button onclick="acceptCookies()">Accepter</button>
+        <button onclick="declineCookies()">Refuser</button>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="inscreprtion.js"></script>
+</body>
 </html>
