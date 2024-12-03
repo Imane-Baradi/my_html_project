@@ -35,7 +35,9 @@ nav {
     width: 300px;
     margin-left: 10px;
 }
-
+.right img:active{
+    opacity: 0.7;
+}
 .search {
     width: 250px;
     height: 25px;
