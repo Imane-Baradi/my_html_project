@@ -1,156 +1,249 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rabat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="rabat.css">
+        <link rel="stylesheet" href="contact_style.css">
+        <link rel="stylesheet" href="footer_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+        <title>rabat</title>
     </head>
     <body>
         <header>
-        <table cellspacing="20" align="right">
-            <tr>
-        <td></td>
-           <td><a  href="index.html">Acceuil</a></td>
-           <td><a href="apropos.html">A propos</a></td> 
-           <td><a href="index.html#villes">Villes</a></td>
-           <td><a href="inscription.html">Inscription</a></td>
-           <td><a href="index.html#experience">Expériences</a></td>
-           <td><a href="#Contact">Nos contacter</a></td> </tr>
-        </table>    
+        <nav>
+            <div class="left">
+                <p class="logo">Guide Morocco</p>
+            </div>
+            <div class="middle">
+                <a href="#guid">Acceuil</a>
+                <a href="apropos.html">A propos</a>
+                <a href="#villes">Villes</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="#experience">Expériences</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="right">
+                <input class="search" type="text" placeholder="Rechercher">
+            </div>
+        </nav>                    
     </header>
-    <h1>Guide Morocco</h1>
-    <div >
-        <input class="search" type="text" placeholder="Rechercher">
-    </div>
-      
-<h1 >Rabat : ville lumière</h1>
-<H2>description</H2>
-<section>
-    <article>   
-        Un climat agréable toute l’année, une situation privilégiée en bordure de l’Atlantique, une Histoire d’une richesse exceptionnelle, font de Rabat-Salé une destination touristique de premier plan.
-        Son littoral déroule près de 60 kilomètres de côtes où se succèdent criques rocheuses ou plages de sable fin et son arrière-pays offre une diversité écologique idéale pour les randonnées.
-        Sur les plans culturel et historique, elle bénéficie d’un patrimoine unique, reflet de la diversité des héritages qui ont façonné les Deux Rives du Bouregreg au cours des siècles.
-    </article>
-    <video src="rabat-FR-with-subtitles (1).mp4" width="200"controls ></video>
-</section>
+    <section class="home">
+        <div class="contents">
+            <h1 >Rabat<br><span>ville lumière</span></h1>
+            <p>
+                Un climat agréable toute l’année, une situation privilégiée en bordure de l’Atlantique, une Histoire d’une richesse exceptionnelle, font de Rabat-Salé une destination touristique de premier plan.
+                Son littoral déroule près de 60 kilomètres de côtes où se succèdent criques rocheuses ou plages de sable fin et son arrière-pays offre une diversité écologique idéale pour les randonnées.
+                Sur les plans culturel et historique, elle bénéficie d’un patrimoine unique, reflet de la diversité des héritages qui ont façonné les Deux Rives du Bouregreg au cours des siècles.
+            </p>
+            <button onclick="playVideo()">Video à voir</button>
+            <video id="myVideo" controls>
+                <source src="rabat-FR-with-subtitles (1).mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </div>
+    </section> 
 
-<h2>Monumens historiques :</h2>
-<section>
-    <article> 
-        <ul>
-            <li><h3>la kasbah des Oudayas :</h3>
+    <section class="monuments"> 
+    <div > 
+    <h1>Monumens historiques</h1>
+    <h3>Découvrez les trésors historiques d'Agadir, où chaque monument raconte une histoire fascinante !<br><span>(flip cards)</span></h3>
+    </div>
+    <div class="cards-cont">
+    <div class="card">
+        <div class="face front">
+            <img src="kasbah des Oudayas.jpg" alt="HHH">
+            <h3>kasbah des Oudayas</h3>
+        </div>
+        <div class="face back">
+            <h3>kasbah des Oudayas</h3>
+            <p>
                 Perchée sur une colline surplombant l’embouchure du fleuve Bouregreg, la Kasbah des Oudayas est un véritable joyau de l’architecture marocaine. Fondée au XIIe siècle par les Almohades, cette ancienne citadelle abrite des ruelles étroites, des maisons blanchies à la chaux, des jardins luxuriants et des points de vue panoramiques sur la ville et l’océan Atlantique. Les visiteurs peuvent se promener dans ses ruelles pittoresques, visiter le musée des Oudayas et admirer la porte monumentale Bab Oudaïa.
-                <table>
-                    <tr>
-                        
-                        <td><img src="KAS2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                        <td><img src="KAS3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                    </tr>
-                </table>   
-            </li>
-            <li><h3> le mausolée Mohammed V:</h3></li>
-            un monument dédié au roi Mohammed V, père de l’indépendance du Maroc. Construit dans un style architectural moderne et traditionnel, le mausolée est un chef-d’œuvre de marbre blanc orné de détails complexes. Les visiteurs peuvent explorer l’intérieur du mausolée, qui abrite les tombes de Mohammed V et de ses fils, les rois Hassan II et Mohammed VI.
-                <table>
-                    <tr>
-                       
-                        <td><img src="MUS2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                        <td><img src="MUS3.jfif" alt="" width="200" height="200"></td>
-                    </tr>
-                </table>
-            
-            <li><h3>La Tour Hassan :</h3></li>
-            Construite au XIIe siècle par le sultan almohade Yacoub Al-Mansour, cette tour inachevée devait être le minaret de la grande mosquée de Rabat. Bien que la mosquée n’ait jamais été achevée, la Tour Hassan reste un symbole de la grandeur passée de la ville. Les visiteurs peuvent admirer ses proportions imposantes et ses détails architecturaux impressionnants, ainsi que les vestiges de la mosquée adjacente.
-                <table>
-                    <tr>
-                       
-                        <td><img src="rabat.jpeg" alt="Description de l'image 3" width="200" height="200"></td>
-                        <td><img src="HAS3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                    </tr>
-                </table>  
-            
-            </ul>      
-    </article>
-</section>
-<h2>Activités :</h2>
-<section>
-    <article>       
-        <ul>
-            <li><h3> Jardin Zoologique :</h3></li>
-           Connu sous le nom de "Zoo de Rabat," est un des plus grands zoos du Maroc, situé à proximité de la capitale. Ouvert en 2012, il abrite une grande diversité d'espèces animales, avec plus de 150 espèces et près de 2 000 animaux, dont des lions de l'Atlas, des gazelles, des éléphants, des girafes, et des espèces de reptiles. Le zoo est conçu pour recréer les différents écosystèmes du Maroc, comme la savane, le désert, la forêt humide et les montagnes de l'Atlas, permettant aux visiteurs d'observer les animaux dans des environnements proches de leurs habitats naturels.
-            <table>
-                <tr>
-                   
-                   
-                    <td><img src="ZOO3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Jardins Andalous :</h3></li>
-            Situés dans la Kasbah des Oudayas à Rabat, sont un magnifique exemple de jardin de style mauresque, conçu dans les années 1920 par des architectes français pendant le protectorat. Ces jardins combinent l’art du jardinage islamique avec des influences andalouses, offrant un espace paisible au cœur de la ville.
-            <table>
-                <tr>
-                    
-                    <td><img src="AND2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                    <td><img src="AND3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>La médina :</h3></li>
-            Classée au patrimoine mondial de l’UNESCO, est un quartier historique qui allie charme ancien et vie locale animée. Elle est entourée de remparts datant de l’époque almohade et regorge de ruelles étroites bordées de maisons blanches aux volets bleus. La médina offre aux visiteurs une expérience authentique, avec ses souks où l’on trouve de l’artisanat marocain, des textiles, des épices et des produits locaux. Parmi les incontournables, le marché central et les ruelles qui mènent à la Kasbah des Oudayas.
-            <table>
-                <tr>
-                    
-                    <td><img src="MED2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                    <td><img src="MED3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-           
-        </ul> 
-    </article>
-</section>
-<h2>Cafés et restaurants :</h2>
-<section>
-    <article>        
-        <ul>
-            <li><h3>Café Dar Al Karam</h3></li>
-            Lieu prisé offrant une ambiance chaleureuse et un décor marocain traditionnel. Il propose une variété de plats locaux, comme des tajines et des pâtisseries, ainsi que des boissons comme le thé à la menthe. Sa terrasse offre une vue agréable, ce qui en fait un endroit idéal pour se détendre après une journée de visites. Situé près de la médina et de la Kasbah des Oudayas, c'est un excellent point de départ pour explorer la ville.
-            <table>
-                <tr>
-                    
-                    
-                    <td><img src=karam3.jfif"  width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Café Le Péniche</h3></li>
-            un café-restaurant unique situé à Rabat, à bord d'une péniche amarrée sur le fleuve Bouregreg. Cet établissement offre une atmosphère décontractée et conviviale, idéale pour se détendre tout en profitant de la vue sur le fleuve et les paysages environnants.
-            <table>
-                <tr>
-                    
-                    <td><img src="PEN3.jfif"  width="200" height="200"></td>
-                   
-                </tr>
-            </table>
-            <li><h3>Café maison Bleue</h3></li>
-            un célèbre restaurant et un riad emblématique qui attire les visiteurs par son ambiance authentique et sa décoration traditionnelle. Elle est réputée pour ses murs peints en bleu et blanc, typiques de l'architecture andalouse, créant une atmosphère chaleureuse et accueillante.
-            <table>
-                <tr>
-                    
-                    <td><img src="MAIS2.jfif"  width="200" height="200"></td> <td><img src="MAIS3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-        </ul>
-    </article>
-</section>
-<section>
-    <div>
-        <h1 id="Contact">Nos contacter</h1>
-        <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">Email</a></li>
-        </ul>
+            </p>
+        </div>
     </div>
-</section>
-<footer>
-    <a href="index.html">Acceuil</a>   <a href="apropos.html">A propos</a>   <a href="index.html#villes">Villes</a>   <a href="index.html#experience">Expériences</a>   <a href="inscription.html">Inscription</a>   <a href="#Contact">Nos contacter</a>
+    <div class="card">
+        <div class="face front">
+            <img src="Mausolée Mohammed V.jpg" alt="HHH">
+            <h3>Mausolée Mohammed V</h3>
+        </div>
+        <div class="face back">
+            <h3>Mausolée Mohammed V</h3>
+            <p>
+                Un monument dédié au roi Mohammed V, père de l’indépendance du Maroc. Construit dans un style architectural moderne et traditionnel, le mausolée est un chef-d’œuvre de marbre blanc orné de détails complexes. Les visiteurs peuvent explorer l’intérieur du mausolée, qui abrite les tombes de Mohammed V et de ses fils, les rois Hassan II et Mohammed VI.
+            </p>
+        </div>
+    </div>
 
-</footer>
+    <div class="card">
+        <div class="face front">
+            <img src="rabat.jpeg" alt="HHH">
+            <h3>Tour Hassan</h3>
+        </div>
+        <div class="face back">
+            <h3>Tour Hassan</h3>
+            <p>
+                Construite au XIIe siècle par le sultan almohade Yacoub Al-Mansour, cette tour inachevée devait être le minaret de la grande mosquée de Rabat. Bien que la mosquée n’ait jamais été achevée, la Tour Hassan reste un symbole de la grandeur passée de la ville. Les visiteurs peuvent admirer ses proportions imposantes et ses détails architecturaux impressionnants, ainsi que les vestiges de la mosquée adjacente.
+            </p>
+        </div>
+    </div>
+</div>
+    </section>
+
+
+    <section class="hh">
+        <div class="titre"> 
+            <h1>Activités</h1>
+            <h3>Vivez des moments mémorables à Agadir, où chaque activité révèle la richesse de sa culture et nature!</h3>
+        </div> 
+        <div class="slider">
+            <div class="list">
+    
+                <div class="item">
+                    <img src="Jardin Zoologique.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Jardin Zoologique</div>
+                        <div class="description">
+                            Connu sous le nom de "Zoo de Rabat," est un des plus grands zoos du Maroc, situé à proximité de la capitale. Ouvert en 2012, il abrite une grande diversité d'espèces animales, avec plus de 150 espèces et près de 2 000 animaux, dont des lions de l'Atlas, des gazelles, des éléphants, des girafes, et des espèces de reptiles. Le zoo est conçu pour recréer les différents écosystèmes du Maroc, comme la savane, le désert, la forêt humide et les montagnes de l'Atlas, permettant aux visiteurs d'observer les animaux dans des environnements proches de leurs habitats naturels.
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/o4dtwUfR88HLXNGX7">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="Jardins Andalous.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Jardins Andalous</div>
+                        <div class="description">
+                            Situés dans la Kasbah des Oudayas à Rabat, sont un magnifique exemple de jardin de style mauresque, conçu dans les années 1920 par des architectes français pendant le protectorat. Ces jardins combinent l’art du jardinage islamique avec des influences andalouses, offrant un espace paisible au cœur de la ville.
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/Acxa7ayVKFEtVWdj7">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="La médina rabat.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type"> La médina</div>
+                        <div class="description">
+                            Classée au patrimoine mondial de l’UNESCO, est un quartier historique qui allie charme ancien et vie locale animée. Elle est entourée de remparts datant de l’époque almohade et regorge de ruelles étroites bordées de maisons blanches aux volets bleus. La médina offre aux visiteurs une expérience authentique, avec ses souks où l’on trouve de l’artisanat marocain, des textiles, des épices et des produits locaux. Parmi les incontournables, le marché central et les ruelles qui mènent à la Kasbah des Oudayas.
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/6WYXos5CLhRSC5K68">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="Grand théâtre.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Grand théâtre</div>
+                        <div class="description">
+                            Situé sur les rives du Bouregreg à Rabat, le Grand Théâtre est un chef-d'œuvre architectural moderne, conçu par l’illustre Zaha Hadid. Inauguré récemment, cet édifice majestueux reflète un mélange harmonieux de créativité contemporaine et d’influences.
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/2vYXdPS2Nyr3V4KB8">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="thumbnail">
+    
+                <div class="item">
+                    <img src="Jardin Zoologique.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Jardins Andalous.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="La médina rabat.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Grand théâtre.jpg" alt="">
+                </div>
+    
+            </div>
+    
+    
+            <div class="nextPrevArrows">
+                <button class="prev"> < </button>
+                <button class="next"> > </button>
+            </div>
+    
+    
+        </div>
+    </section> 
+    <section class="cafe">
+        <div class="titreFIN"> 
+            <h1>Cafées et restaurants</h1>
+            <h3>Savourez des instants délicieux à Agadir, où chaque café et restaurant vous plonge dans une expérience culinaire unique!</h3>
+        </div>
+        <div class="resto">
+            <div class="carte">
+                <img src="Café Dar Al Karam.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Café Dar Al Karam</h3>
+                    <p>
+                        Lieu prisé offrant une ambiance chaleureuse et un décor marocain traditionnel. Il propose une variété de plats locaux, comme des tajines et des pâtisseries, ainsi que des boissons comme le thé à la menthe. Sa terrasse offre une vue agréable, ce qui en fait un endroit idéal pour se détendre après une journée de visites. Situé près de la médina et de la Kasbah des Oudayas, c'est un excellent point de départ pour explorer la ville.
+                    </p>
+                    <a href="https://maps.app.goo.gl/xkKoXSUKmQAxAKkR8" class="btn">Localisation</a>
+                </div>
+            </div>
+            <div class="carte">
+                <img src="Café Le Péniche.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Café Le Péniche</h3>
+                    <p>
+                        Un café-restaurant unique situé à Rabat, à bord d'une péniche amarrée sur le fleuve Bouregreg. Cet établissement offre une atmosphère décontractée et conviviale, idéale pour se détendre tout en profitant de la vue sur le fleuve et les paysages environnants.
+                    </p>
+                    <a  href="https://maps.app.goo.gl/g1siQrD98CSTdjqY8" class="btn">Localisation</a>
+                </div>
+            </div>
+            <div class="carte">
+                <img src="Café maison Bleue.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Café maison Bleue</h3>
+                    <p>
+                        Un célèbre restaurant et un riad emblématique qui attire les visiteurs par son ambiance authentique et sa décoration traditionnelle. Elle est réputée pour ses murs peints en bleu et blanc, typiques de l'architecture andalouse, créant une atmosphère chaleureuse et accueillante.
+                    </p>
+                    <a href="https://maps.app.goo.gl/PxiF4oFtxoQZUVTb7" class="btn">Localisation</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="contact">
+            <h1 id="Contact">Contact</h1>
+            <div class="contact1">
+                
+                    <div class="instagram"><img src="instagram.png" onclick="lien('https://www.instagram.com/')"><br><a href="https://www.instagram.com/" target="_blank">Instagram</a></div>
+                    <div class="facebook"><img src="facebook.png" onclick="lien('https://fr-fr.facebook.com/')"><br><a href="https://fr-fr.facebook.com/" target="_blank">Facebook</a></div>
+                    <div class="gmail"><img src="Gmail.png" onclick="lien('https://mail.google.com/mail/u/0/')"><br><a href="https://mail.google.com/mail/u/0/" target="_blank">Email</a></div>
+                    <div class="linkedin"><img src="linkedin.png" onclick="lien('https://www.linkedin.com/feed/')"><br><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></div>
+
+                
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <a href="index.html">Acceil</a>
+                <a href="apropos.html">A propos</a>
+                <a href="#villes">villes</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="#experience">Expériences</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </footer>
+<script src="rabat.js"></script>
     </body>
 </html>
