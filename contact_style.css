@@ -1,10 +1,9 @@
-.contact {
+.contact{
     padding: 10px;
-    margin: 0;
+    margin: 0px;
     background-color: rgb(7, 13, 73);
 }
-
-.contact h1 {
+.contact h1{
     text-align: center;
     color: aliceblue;
     font-size: 40px;
@@ -12,48 +11,43 @@
     font-weight: bold;
     text-shadow: 5px 5px 5px black;
 }
-
-.contact1 {
+.contact1{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
     margin-bottom: 80px;
-    justify-items: center; 
 }
 
-.contact1 img {
+
+.contact1 img{
     width: 4rem;
-    height: 4rem;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
     border-radius: 2rem;
     cursor: pointer;
-    transition: transform 0.5s, box-shadow 0.5s;
+    transition: transform 0.5s;
 }
-
-.contact1 img:hover {
+.contact1 img:hover{
     transform: scale(1.5);
-    box-shadow: 15px 15px 25px 0 rgba(0, 0, 0, 0.7); 
 }
+.gmail img{
+    border-radius: none;
 
-.gmail img {
-    border-radius: 0;
 }
-
-.contact1 .instagram,
-.contact1 .facebook,
-.contact1 .linkedin,
-.contact1 .gmail {
+.instagram{
     text-align: center;
 }
-
-.contact1 a {
+.facebook{
+    text-align: center;
+}
+.linkedin{
+    text-align: center;
+}
+.gmail{
+    text-align: center;
+}
+.contact1 a{
     text-decoration: none;
     color: aliceblue;
-    font-weight: bold; 
-    font-size: 1rem;
 }
-
-.contact1 a:hover {
-    text-decoration: underline;
-    color: lightblue;
+.contact1 a:hover{
+    text-decoration:underline;
 }
