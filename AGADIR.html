@@ -1,173 +1,263 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="agadir.css">
+        <link rel="stylesheet" href="contact_style.css">
+        <link rel="stylesheet" href="footer_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
         <title>agadir</title>
     </head>
     <body>
         <header>
-        <table cellspacing="20" align="right">
-            <tr>
-        <td></td>
-           <td><a  href="index.html">Acceuil</a></td> 
-           <td><a href="apropos.html">A propos</a></td>
-           <td><a href="index.html#villes">Villes</a></td>
-           <td><a href="inscription.html">Inscription</a></td>
-           <td><a href="index.html#experience">Expériences</a></td>
-           <td><a href="#Contact">Nos contacter</a></td> </tr>
-        </table>    
+        <nav>
+            <div class="left">
+                <p class="logo">Guide Morocco</p>
+            </div>
+            <div class="middle">
+                <a href="#guid">Acceuil</a>
+                <a href="apropos.html">A propos</a>
+                <a href="#villes">Villes</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="#experience">Expériences</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="right">
+                <input class="search" type="text" placeholder="Rechercher">
+            </div>
+        </nav>                    
     </header>
-    <h1>Guide Morocco</h1>
-    <div >
-        <input class="search" type="text" placeholder="Rechercher">
-    </div>
-      
-<h1 >AGADIR:la perle du sud </h1>
-<H2>description</H2>
-<section>
-    <article>   
-        Avec un climat modéré, des plages dorées au sable fin qui s’étendent sur 30 km,et un soleil brillant toute l’année, Agadir est, sans doute, une destination touristique d’excellence et une station balnéaire de choix. Sur sa côte atlantique, hôtels et complexes de loisirs luxueux s’alignent avec des passages plain-pied vers la plage. Distingués par leur architecture marocaine moderne, ils sont bien équipés pour offrir une panoplie de loisirs et d’activités sportives comme le golf, le tennis, l’équitation, etc.sans oublier les cures bien être.   
-    </article>
-    <video src="agadir-FR-with-subtitles (2).mp4" width="200"controls ></video>
-</section>
+    <section class="home">
+        <div class="contents">
+            <h1 >AGADIR<br><span>La perle du sud</span></h1>
+            <p>
+                Avec un climat modéré, des plages dorées au sable fin qui s’étendent sur 30 km,et un soleil brillant toute l’année, Agadir est, sans doute, une destination touristique d’excellence et une station balnéaire de choix. Sur sa côte atlantique, hôtels et complexes de loisirs luxueux s’alignent avec des passages plain-pied vers la plage. Distingués par leur architecture marocaine moderne, ils sont bien équipés pour offrir une panoplie de loisirs et d’activités sportives comme le golf, le tennis, l’équitation, etc.sans oublier les cures bien être.   
+            </p>
+            <button onclick="playVideo()">Video à voir</button>
+            <video id="myVideo" controls>
+                <source src="agadir-FR-with-subtitles (2).mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </div>
+    </section> 
 
-<h2>Monumens historiques :</h2>
-<section>
-    <article> 
-        <ul>
-            <li><h3>Kasbah d'Agadir Oufella :</h3>
-                la Kasbah Agadir Oufella  offre une vue impressionnante sur la sublime baie d’Agadir, ainsi que sur son arrière-pays. De là, on peut admirer la ville qui s’étend à l’horizon, comme on peut assister à des couchers de soleil magiqueshauts en couleur. Témoins d’un événement dévastateur, les vestigesde la Kasbah renferment aussi l’histoire d’une citadelle au passé glorieux.
-                <table>
-                    <tr>
-                        <td><img src="agadirOUFELLA2.jpg" alt="Description de l'image 1" width="200" height="200"></td>
-                        <td><img src="oufla-3.jpg" alt="Description de l'image 2" width="200" height="200"></td>
-                
-                    </tr>
-                </table>   
-            </li>
-            <li><h3>La Médina d'Agadir :</h3></li>
-                La Médina d’Agadir propose une panoplie d’activités qui varient entre restauration basée sur la gastronomie Marocaine, shopping à travers des boutiques qui offrent des produits d’artisanats et de terroirs du Maroc, des espaces consacrés aux artisans et aux activités culturelles et des circuits au niveau du parc. Une mosaïque de sensations !
-                <table>
-                    <tr>
-                        <td><img src="mdn2.jpg" alt="Description de l'image 1" width="200" height="200"></td>
-                        <td><img src="MDN3.jpeg" alt="Description de l'image 2" width="200" height="200"></td>
-                        
-                    </tr>
-                </table>
-            
-            
-            <li><h3>Musee du patrimoine amazigh :</h3></li>
-                un lieu incontournable pour découvrir la richesse culturelle des peuples amazighs du Maroc. Vous y trouverez une collection exceptionnelle d'objets artisanaux, tels que des bijoux traditionnels, des poteries, des textiles, et des instruments de musique, témoignant de l'histoire et des traditions ancestrales de cette région. Le musée propose également des espaces dédiés à l'art amazigh, des expositions interactives et des ateliers pour plonger dans l’héritage artistique et culturel amazigh. Une immersion authentique au cœur de l'identité amazighe !
-                <table>
-                    <tr>
-                        <td><img src="MP3.jfif" alt="Description de l'image 1" width="200" height="200"></td>
-                        <td><img src="MP2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                        
-                    </tr>
-                </table>
-            </ul>      
-    </article>
-</section>
-<h2>Activités :</h2>
-<section>
-    <article>       
-        <ul>
-            <li><h3>Vallée du paradis:</h3></li>
-            Également appelée la vallée verte, cet écrin de verdure est un véritable havre de paix. C’est l’endroit idéal pour les amoureux de la nature et tous ceux qui veulent sortir un peu de la ville et changer de la plage. Pour en profiter pleinement, vous pouvez opter pour une excursion à la journée proposée par les plateformes d’activités.
-            <table>
-                <tr>
-                    
-                    <td><img src="VP2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                    <td><img src="VP3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Monter à bord du téléphérique d’Agadir:</h3></li>
-            Imaginez-vous, suspendu dans le ciel, à bord du téléphérique d’Agadir, qui offre une vue imprenable sur les montagnes de l’Atlas, la merveilleuse Kasbah, et la vaste étendue de l’océan Atlantique. Embarquez dans le seul téléphérique du Maroc pour une balade d’une heure et demie, avec des vues à 360 degrés. Longez le port, découvrez les quartiers historiques et contemplez la magnifique baie d’Agadir avec la lumière particulière du ciel se reflétant sur l’océan.Une expérience à la fois riche en émotions et en découvertes, pour un privilège rare pour les yeux.
-            <table>
-                <tr>
-                   
-                    <td><img src="TELE2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                    <td><img src="TELE3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Surfer la vague à Tamraght:</h3></li>
-            Si vous venez visiter Agadir avec l’envie de faire des activités en pleine nature, le surf doit absolument être votre priorité. Avec ses plages magnifiques, Agadir est prisée des surfeurs,offrant des vagues adaptées à tous les niveaux. Tamraght et Aourir sont parmi les spots favoris aux alentours d’Agadir, parfaits pour ceux qui débutent en surf. Pour des vagues plus douces,optez pour « banana beach ». Vous pouvez y accéder en voiture, taxi, ou grâce à la navette « Souk to Surf ». Cette dernière, économique et pratique, relie Agadir à Tamraght quotidiennement.
-            <table>
-                <tr>
-                    
-                    <td><img src="SURF2.jfif" alt="Description de l'image 2" width="200" height="200"></td>
-                    <td><img src="SURF3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Souk el Had:</h3></li>
-            Si vous partez visiter Agadir, passer un moment au Souk est incontournable. Le cachet moderne du Souk el Had le différencie un peu des autres souks marocains, mais n’en reste pas moins authentique ! Ce trésor au coeur de la ville regroupe plus de 3000 commerces sur une superficie de 11 hectares. Vous découvrirez ici un univers authentique, vivant, tout en couleurs, où la senteur des épices envoûtera vos sens. Indéniablement l’un des endroits les plus agréables et les plus animés d’Agadir !
-            <table>
-                <tr>
-                    <td><img src="SOUK3.jfif" alt="Description de l'image 1" width="200" height="200"></td>
-                    
-                    <td><img src="SOUK2.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-        </ul> 
-    </article>
-</section>
-<h2>Cafés et restaurants :</h2>
-<section>
-    <article>        
-        <ul>
-            <li><h3>Restaurant alf lila ou lila</h3></li>
-            Le restaurant Alf Lila w Lila, situé au 2 Rue des Souks à Agadir, est un établissement réputé pour sa cuisine marocaine traditionnelle ainsi que ses plats innovants. Avec une ambiance accueillante et un service de qualité, ce café-restaurant obtient en moyenne une note de 4,1 étoiles. Les clients apprécient particulièrement ses plats signature, qui offrent une expérience culinaire mémorable et qui séduisent les sens​
-            <table>
-                <tr>
-                    <td><img src="ALF22.jpg" alt="Description de l'image 1" width="200" height="200"></td>
-                    <td><img src="alf3.jpg" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Restaurant Saykouk</h3></li>
-            Le restaurant Saykouk, situé au 29 rue Yacoub El Mansour dans le quartier de Talborjt à Agadir, est un lieu prisé pour son ambiance chaleureuse et sa vue panoramique depuis le rooftop. Ce café-restaurant propose une cuisine marocaine et méditerranéenne avec des plats comme les tajines, les briouates, et des spécialités locales revisitées. Il est apprécié pour son décor moderne, inspiré des motifs berbères, ainsi que pour son personnel accueillant. Saykouk est également un endroit populaire pour les événements culturels et sportifs, offrant une ambiance animée lors de soirées ou de retransmissions de matchs
-            <table>
-                <tr>
-                    <td><img src="SAY1.jfif" alt="Description de l'image 1" width="200" height="200"></td>
-                
-                    <td><img src="SAY3.jfif" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Café la source</h3></li>
-            Le Café La Source, situé dans la région de Taghazout près d'Agadir, est une destination appréciée pour sa vue imprenable sur l'océan et son ambiance conviviale. Ce lieu offre une terrasse spacieuse, idéale pour profiter de la brise marine tout en savourant un repas ou un café. La Source sert une variété de plats locaux et internationaux, avec une réputation pour la qualité des plats et du service.
-            <table>
-                <tr>
-                    <td><img src="src1.jpg" alt="Description de l'image 1" width="200" height="200"></td>
+    <section class="monuments"> 
+    <div > 
+    <h1>Monumens historiques</h1>
+    <h3>Découvrez les trésors historiques d'Agadir, où chaque monument raconte une histoire fascinante !<br><span>(flip cards)</span></h3>
+    </div>
+    <div class="cards-cont">
+    <div class="card">
+        <div class="face front">
+            <img src="agadirOUFELLA2.jpg" alt="HHH">
+            <h3>Kasbah Oufella</h3>
+        </div>
+        <div class="face back">
+            <h3>Kasbah Oufella</h3>
+            <p>
+                la Kasbah Agadir Oufella  offre une vue impressionnante sur la sublime baie d’Agadir, 
+                ainsi que sur son arrière-pays. De là, on peut admirer la ville qui s’étend à l’horizon, 
+                comme on peut assister à des couchers de soleil magiqueshauts en couleur. Témoins d’un 
+                événement dévastateur, les vestigesde la Kasbah renferment aussi l’histoire d’une citadelle 
+                au passé glorieux.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face front">
+            <img src="La Médina AGADIR.jpg" alt="HHH">
+            <h3>La Médina</h3>
+        </div>
+        <div class="face back">
+            <h3>La Médina</h3>
+            <p>
+                La Médina d’Agadir propose une panoplie d’activités qui varient entre restauration basée sur
+                la gastronomie Marocaine, shopping à travers des boutiques qui offrent des produits d’artisanats
+                et de terroirs du Maroc, des espaces consacrés aux artisans et aux activités culturelles et des
+                circuits au niveau du parc. Une mosaïque de sensations !
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="face front">
+            <img src="musee-municipal-agadir-bijoux-1.jpg" alt="HHH">
+            <h3>Musée du patrimoine amazigh</h3>
+        </div>
+        <div class="face back">
+            <h3>Musée du patrimoine amazigh</h3>
+            <p>
+                un lieu incontournable pour découvrir la richesse culturelle des peuples amazighs du Maroc.
+                Vous y trouverez une collection exceptionnelle d'objets artisanaux, tels que des bijoux 
+                traditionnels, des poteries, des textiles, et des instruments de musique, témoignant de
+                l'histoire et des traditions ancestrales de cette région. Le musée propose également des
+                espaces dédiés à l'art amazigh, des expositions interactives et des ateliers pour plonger 
+                dans l’héritage artistique et culturel amazigh. Une immersion authentique au cœur de l'identité 
+                amazighe !
+            </p>
+        </div>
+    </div>
+</div>
+    </section>
+
+
+    <section class="hh">
+        <div class="titre"> 
+            <h1>Activités</h1>
+            <h3>Vivez des moments mémorables à Agadir, où chaque activité révèle la richesse de sa culture et nature!</h3>
+        </div> 
+        <div class="slider">
+            <div class="list">
     
-                    <td><img src="SRC3.jpg" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
+                <div class="item">
+                    <img src="Vallée du paradis.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Vallée du paradis</div>
+                        <div class="description">
+                            Plongez au cœur de la vallée verte, un havre de paix idéal pour échapper à l’agitation. Entre nature luxuriante et sérénité, c’est la destination parfaite pour une journée d’évasion.
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/rfngAMeruwqPPaCWA">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="Agadir1.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Téléphérique</div>
+                        <div class="description">
+                            Découvrez le téléphérique d’Agadir, le seul au Maroc, offrant des vues à 360° sur les montagnes de l’Atlas, la Kasbah et l’océan Atlantique. Une expérience inoubliable entre ciel et mer !
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/pJW6eVTjSrS9CwS9A">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="SURF.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Surf </div>
+                        <div class="description">
+                            Agadir est un paradis pour les amateurs de surf, avec des plages comme Tamraght, idéales pour débutants. Rejoignez ces spots en taxi, voiture ou via la navette économique « Souk to Surf ». Vivez l’expérience des vagues dans un cadre exceptionnel !
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/QdDDx8tF234q4yDN6">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="SOUKALHAD.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Souk el Had</div>
+                        <div class="description">
+                            Le Souk el Had d’Agadir, avec ses 3000 commerces sur 11 hectares, offre une expérience authentique et colorée. Un lieu animé où les épices et l’atmosphère locale envoûtent les visiteurs !
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/tvGXQHXZUV6Wz8YPA">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="thumbnail">
+    
+                <div class="item">
+                    <img src="Vallée du paradis.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Agadir1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="SURF.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="SOUKALHAD.jpg" alt="">
+                </div>
+    
+            </div>
+    
+    
+            <div class="nextPrevArrows">
+                <button class="prev"> < </button>
+                <button class="next"> > </button>
+            </div>
+    
+    
+        </div>
+    </section> 
+    <section class="cafe">
+        <div class="titreFIN"> 
+            <h1>Cafées et restaurants</h1>
+            <h3>Savourez des instants délicieux à Agadir, où chaque café et restaurant vous plonge dans une expérience culinaire unique!</h3>
+        </div>
+        <div class="resto">
+            <div class="carte">
+                <img src="alflila.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Restaurant alf lila ou lila</h3>
+                    <p>
+                        Le restaurant Alf Lila w Lila, situé au 2 Rue des Souks à Agadir, est un établissement réputé pour sa cuisine marocaine traditionnelle ainsi que ses plats innovants. Avec une ambiance accueillante et un service de qualité, ce café-restaurant obtient en moyenne une note de 4,1 étoiles. Les clients apprécient particulièrement ses plats signature, qui offrent une expérience culinaire mémorable et qui séduisent les sens​.
+                    </p>
+                    <a href="https://maps.app.goo.gl/pSG2rNQDweUfPTZC9" class="btn">Localisation</a>
+                </div>
+            </div>
+            <div class="carte">
+                <img src="saykouk.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Restaurant Saykouk</h3>
+                    <p>
+                        Le restaurant Saykouk, situé au 29 rue Yacoub El Mansour dans le quartier de Talborjt à Agadir, est un lieu prisé pour son ambiance chaleureuse et sa vue panoramique depuis le rooftop. Ce café-restaurant propose une cuisine marocaine et méditerranéenne avec des plats comme les tajines, les briouates, et des spécialités locales revisitées. Il est apprécié pour son décor moderne, inspiré des motifs berbères.
+                    </p>
+                    <a  href="https://maps.app.goo.gl/vbqx7i7y9FbEg5hM6" class="btn">Localisation</a>
+                </div>
+            </div>
+            <div class="carte">
+                <img src="lasource.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Café la source</h3>
+                    <p>
+                        Le Café La Source, situé dans la région de Taghazout près d'Agadir, est une destination appréciée pour sa vue imprenable sur l'océan et son ambiance conviviale. Ce lieu offre une terrasse spacieuse, idéale pour profiter de la brise marine tout en savourant un repas ou un café. La Source sert une variété de plats locaux et internationaux, avec une réputation pour la qualité des plats et du service.
+                    </p>
+                    <a href="https://maps.app.goo.gl/KKHZCZgL2k57cuk77" class="btn">Localisation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h1 id="Contact">Contact</h1>
+        <div class="contact1">
             
-        </ul>
-    </article>
-</section>
-<section>
-    <div>
-        <h1 id="Contact">Nos contacter</h1>
-        <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">Email</a></li>
-        </ul>
-    </div>
-</section>
-<footer>
-    <a href="index.html">Acceuil</a>   <a href="apropos.html">A propos</a>   <a href="index.html#villes">Villes</a>   <a href="index.html#experience">Expériences</a>   <a href="inscription.html">Inscription</a>   <a href="#Contact">Nos contacter</a>
+                <div class="instagram"><img src="instagram.png" onclick="lien('https://www.instagram.com/')"><br><a href="https://www.instagram.com/" target="_blank">Instagram</a></div>
+                <div class="facebook"><img src="facebook.png" onclick="lien('https://fr-fr.facebook.com/')"><br><a href="https://fr-fr.facebook.com/" target="_blank">Facebook</a></div>
+                <div class="gmail"><img src="Gmail.png" onclick="lien('https://mail.google.com/mail/u/0/')"><br><a href="https://mail.google.com/mail/u/0/" target="_blank">Email</a></div>
+                <div class="linkedin"><img src="linkedin.png" onclick="lien('https://www.linkedin.com/feed/')"><br><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></div>
 
-</footer>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <a href="index.html">Acceil</a>
+            <a href="apropos.html">A propos</a>
+            <a href="#villes">villes</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="#experience">Expériences</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+<script src="agadir.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-
 
 
 
