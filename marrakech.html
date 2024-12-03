@@ -1,163 +1,246 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="marrakech.css">
+        <link rel="stylesheet" href="contact_style.css">
+        <link rel="stylesheet" href="footer_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
         <title>Marrakech</title>
     </head>
     <body>
         <header>
-        <table cellspacing="20" align="right">
-            <tr>
-        <td></td>
-           <td><a  href="index.html">Acceuil</a></td>
-           <td><a href="apropos.html">A propos</a></td> 
-           <td><a href="index.html#villes">Villes</a></td>
-           <td><a href="inscription.html">Inscription</a></td>
-           <td><a href="index.html#experience">Expériences</a></td>
-           <td><a href="#Contact">Nos contacter</a></td> </tr>
-        </table>    
+        <nav>
+            <div class="left">
+                <p class="logo">Guide Morocco</p>
+            </div>
+            <div class="middle">
+                <a href="#guid">Acceuil</a>
+                <a href="apropos.html">A propos</a>
+                <a href="#villes">Villes</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="#experience">Expériences</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="right">
+                <input class="search" type="text" placeholder="Rechercher">
+            </div>
+        </nav>                    
     </header>
-    <h1>Guide Morocco</h1>
-    <div >
-        <input class="search" type="text" placeholder="Rechercher">
-    </div>
-      
-<h1 >Marrakech : la ville rouge</h1>
-<H2>description</H2>
-<section>
-    <article>   
-la capitale du Maroc pendant 350 ans se trouve au pied des montagnes de l’Atlas et du désert. Un désert de pierre lunaire, spectaculaire, insaisissable.
-La fascination des occidentaux pour la ville a permis la création de nombreux musées passionnants et uniques à l’échelle du pays. Cela fait de Marrakech la capitale culturelle du Maroc, même si historiquement le titre revient à Fès. L’éternelle concurrente.
-Côté pile, c’est une cité impériale avec ses palais, sa médina, ses jardins luxuriants, ses mosquées et anciennes écoles coraniques… entourée de murailles ocres (d’où le surnom) et percées de portes monumentales. Côté face, c’est la 1ere destination touristique marocaine, luxueuse, moderne et hédoniste.
-    </article>
-    <video src="marrakech-FR-with-subtitles (1).mp4" width="200"controls ></video>
-</section>
+    <section class="home">
+        <div class="contents">
+            <h1 >Marrakech<br><span>la ville rouge</span></h1>
+            <p>
+                la capitale du Maroc pendant 350 ans se trouve au pied des montagnes de l’Atlas et du désert. Un désert de pierre lunaire, spectaculaire, insaisissable. La fascination des occidentaux pour la ville a permis la création de nombreux musées passionnants et uniques à l’échelle du pays. Cela fait de Marrakech la capitale culturelle du Maroc, même si historiquement le titre revient à Fès. L’éternelle concurrente. Côté pile, c’est une cité impériale avec ses palais, sa médina, ses jardins luxuriants, ses mosquées et anciennes écoles coraniques… entourée de murailles ocres (d’où le surnom) et percées de portes monumentales. Côté face, c’est la 1ere destination touristique marocaine, luxueuse, moderne et hédoniste.
+            </p>
+            <button onclick="playVideo()">Video à voir</button>
+            <video id="myVideo" controls>
+                <source src="marrakech-FR-with-subtitles (1).mp4" type="video/mp4">
+            </video>
+        </div>
+    </section> 
 
-<h2>Monumens historiques :</h2>
-<section>
-    <article> 
-        <ul>
-            <li><h3>Médina de Marrakech :</h3>
+    <section class="monuments"> 
+    <div > 
+    <h1>Monumens historiques</h1>
+    <h3>Découvrez les trésors historiques d'Agadir, où chaque monument raconte une histoire fascinante !<br><span>(flip cards)</span></h3>
+    </div>
+    <div class="cards-cont">
+    <div class="card">
+        <div class="face front">
+            <img src="La Médina MARRAKECH.jpg" alt="HHH">
+            <h3>La Médina</h3>
+        </div>
+        <div class="face back">
+            <h3>La Médina</h3>
+            <p>
                 Quartier historique de Marrakech, la Médina est le cœur de la ville. Classée au patrimoine mondial de l’Unesco, elle émerveille par ses remparts et ses portes monumentales datant du XIIème siècle, ses mosquées et ses palais qui vous plongeront dans le décor des Mille et unes nuits. Mais la Médina de Marrakech, ce sont aussi des ruelles étroites au détour desquelles vous découvrirez des souks et de magnifiques riads, aujourd’hui transformés en musées, jardins ou villas de luxe dans lesquelles vous pourrez séjourner.
-                <table>
-                    <tr>
-                        
-                        <td><img src="MD2.jpg" alt="Description de l'image 2" width="200" height="200"></td>
-                  
-                    </tr>
-                </table>   
-            </li>
-            <li><h3>La mosquée Koutoubia :</h3></li>
-            Littéralement la « mosquée des libraires » car elle se situait dans le souk des vendeurs de manuscrits, la mosquée Koutoubia date du XIIème siècle. Fleuron de l’architecture almohade, elle se distingue par son style sobre et ses arcs nus. Achevé quelques années plus tard, en 1196, son minaret est plus décoré : motifs floraux et épigraphiques, entrelacs en relief, peintures et faïences ornent ses quatre façades. A son sommet, trois boules de cuivre doré symbolisent les trois mosquées de l’islam : Kaaba (La Mecque), Médine et Al Qods. La mosquée Koutoubia est aujourd’hui considérée comme l’un des plus beaux monuments du Maghreb.
-                <table>
-                    <tr>
-                      
-                       
-                        <td><img src="KT3.jpg" alt="" width="200" height="200"></td>
-                    </tr>
-                </table>
-            
-            <li><h3> médersa Ben-Youssef :</h3></li>
-            Cette école coranique construite au XVIème siècle est un joyau de l’art mérinide. Du sol au plafond, tout y est finement décoré : bassin intérieur, piliers de marbre, façades ciselées, motifs floraux et géométriques aux couleurs ocre et turquoise. Mais le plus somptueux est le gebs qui orne les murs : le plâtre est sculpté et ciselé pour former comme une dentelle. Un vrai plaisir pour les yeux !
-                <table>
-                    <tr>
-                       
-                      
-                        <td><img src="MBY3.jpg" alt="Description de l'image 3" width="200" height="200"></td>
-                    </tr>
-                </table>
-            </ul>      
-    </article>
-</section>
-<h2>Activités :</h2>
-<section>
-    <article>       
-        <ul>
-            <li><h3> Place Jemaa el-Fna (Djemaa el-Fna) :</h3></li>
-            Un marché en plein air le jour et rempli de dîners, d'acheteurs, de conteurs et de chanteurs la nuit, Jemaa el-Fna (également écrit Djemaa el-Fna ou Jemaa el-Fnaa) est l'épicentre de la vie de Marrakech, où les habitants et les touristes viennent nuit après nuit pour voir le choc des couleurs, des sons, des odeurs et des vues qui composent cet endroit mémorable.
-            <table>
-                <tr>
-                    
-                   
-                    <td><img src="marrakech.jpeg" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Jardin Majorelle :</h3></li>
-            Avec ses couleurs bleues audacieuses, ses palmiers imposants et ses cactus gigantesques, entourant des bassins de nénuphars et des jardins peuplés de plantes exotiques, le Jardin Majorelle figure parmi les plus beaux endroits de Marrakech. Propriété du couturier Yves Saint Laurent, c’est aussi l’une des attractions les plus visitées de la ville.
-            <table>
-                <tr>
-                    
-                    <td><img src="MAJ2.jpg" alt="Description de l'image 2" width="200" height="200"></td>
-                  
-                </tr>
-            </table>
-            <li><h3>Vallée de l'Ourika :</h3></li>
-            Une étendue luxuriante de champs en terrasses, de coteaux boisés et de cascades en cascade dans les contreforts des montagnes du Haut Atlas, la vallée de l'Ourika (Vallée de l'Ourika) est une oasis naturelle à seulement une heure de la ville de Marrakech.
-            <table>
-                <tr>
-                   
-                  
-                    <td><img src="OU3.jpg" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>Vol en montgolfière :</h3></li>
-            Un vol en montgolfière au-dessus de Marrakech est une expérience magique à ne pas manquer. Envolez-vous tôt le matin pour admirer le lever du soleil sur la médina, les palmeraies et les majestueuses montagnes de l'Atlas. Les vols durent environ une heure, suivis d'un petit-déjeuner traditionnel dans un cadre pittoresque.
-            <table>
-                <tr>
-                    
-                 
-                    <td><img src="MN3.jpg" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-        </ul> 
-    </article>
-</section>
-<h2>Cafés et restaurants :</h2>
-<section>
-    <article>        
-        <ul>
-            <li><h3>Café STAH</h3></li>
-            un lieu branché situé dans le quartier de Guéliz, connu pour son ambiance moderne et artistique. Il propose une sélection de cafés, thés et plats légers, ainsi que des pâtisseries. Avec un bon accès Wi-Fi, c'est un endroit idéal pour se détendre ou travailler. Le café accueille également des événements culturels, ce qui en fait un point de rencontre populaire pour les habitants et les touristes.
-            <table>
-                <tr>
-                   
-                    <td><img src="ST2.jpg" alt="Description de l'image 2" width="200" height="200"></td>
-                
-                </tr>
-            </table>
-            <li><h3>Café OTTO</h3></li>
-            Un café moderne situé à Guéliz, connu pour son ambiance accueillante et son décor élégant. Il propose une variété de cafés, thés, jus frais, ainsi que des plats légers et des pâtisseries. C'est un lieu populaire pour se détendre, travailler et participer à des événements culturels.
-            <table>
-                <tr>
-                  
- 
-                    <td><img src="OT3.jpg" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-            <li><h3>rooftop garden</h3></li>
-            
-Un rooftop garden est un jardin situé sur le toit d'un bâtiment, offrant un espace de détente avec une vue sur la ville. Ces jardins sont souvent aménagés avec des plantes, des fleurs et des zones de repos. Ils contribuent à améliorer la qualité de l'air et à réduire la chaleur urbaine, tout en créant un havre de paix en milieu urbain.
-            <table>
-                <tr>
-                    <td><img src="GAR3.jpg" alt="Description de l'image 3" width="200" height="200"></td>
-                </tr>
-            </table>
-        </ul>
-    </article>
-</section>
-<section>
-    <div>
-        <h1 id="Contact">Nos contacter</h1>
-        <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">Email</a></li>
-        </ul>
+            </p>
+        </div>
     </div>
-</section>
-<footer>
-    <a href="index.html">Acceuil</a>  <a href="apropos.html">A propos</a>    <a href="index.html#villes">Villes</a>   <a href="index.html#experience">Expériences</a>   <a href="inscription.html">Inscription</a>   <a href="#Contact">Nos contacter</a>
+    <div class="card">
+        <div class="face front">
+            <img src="La mosquée Koutoubia.jpg" alt="HHH">
+            <h3>La mosquée Koutoubia</h3>
+        </div>
+        <div class="face back">
+            <h3>La mosquée Koutoubia</h3>
+            <p>
+                Littéralement la « mosquée des libraires » car elle se situait dans le souk des vendeurs de manuscrits, la mosquée Koutoubia date du XIIème siècle. Fleuron de l’architecture almohade, elle se distingue par son style sobre et ses arcs nus. Achevé quelques années plus tard, en 1196, son minaret est plus décoré : motifs floraux et épigraphiques, entrelacs en relief, peintures et faïences ornent ses quatre façades. A son sommet, trois boules de cuivre doré symbolisent les trois mosquées de l’islam : Kaaba (La Mecque), Médine et Al Qods. La mosquée Koutoubia est aujourd’hui considérée comme l’un des plus beaux monuments du Maghreb.
+            </p>
+        </div>
+    </div>
 
-</footer>
+    <div class="card">
+        <div class="face front">
+            <img src="Médersa Ben-Youssef.jpg" alt="HHH">
+            <h3>Médersa Ben-Youssef </h3>
+        </div>
+        <div class="face back">
+            <h3>Médersa Ben-Youssef</h3>
+            <p>
+                Cette école coranique construite au XVIème siècle est un joyau de l’art mérinide. Du sol au plafond, tout y est finement décoré : bassin intérieur, piliers de marbre, façades ciselées, motifs floraux et géométriques aux couleurs ocre et turquoise. Mais le plus somptueux est le gebs qui orne les murs : le plâtre est sculpté et ciselé pour former comme une dentelle. Un vrai plaisir pour les yeux !
+            </p>
+        </div>
+    </div>
+</div>
+    </section>
+
+
+    <section class="hh">
+        <div class="titre"> 
+            <h1>Activités</h1>
+            <h3>Vivez des moments mémorables à Agadir, où chaque activité révèle la richesse de sa culture et nature!</h3>
+        </div> 
+        <div class="slider">
+            <div class="list">
+    
+                <div class="item">
+                    <img src="marrakech.jpeg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Jemaa el-Fna</div>
+                        <div class="description">
+                            Un marché en plein air le jour et rempli de dîners, d'acheteurs, de conteurs et de chanteurs la nuit, Jemaa el-Fna (également écrit Djemaa el-Fna ou Jemaa el-Fnaa) est l'épicentre de la vie de Marrakech, où les habitants et les touristes viennent nuit après nuit pour voir le choc des couleurs, des sons, des odeurs et des vues qui composent cet endroit mémorable.
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/Szq4Vv1W2Duzc7wW8">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="Jardin Majorelle.png" alt="">
+    
+                    <div class="content">
+                        <div class="type">Jardin Majorelle</div>
+                        <div class="description">
+                            Avec ses couleurs bleues audacieuses, ses palmiers imposants et ses cactus gigantesques, entourant des bassins de nénuphars et des jardins peuplés de plantes exotiques, le Jardin Majorelle figure parmi les plus beaux endroits de Marrakech. Propriété du couturier Yves Saint Laurent, c’est aussi l’une des attractions les plus visitées de la ville.
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/1EC68kqDe8oN5xD2A">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="Vallée de l'Ourika.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Ourika </div>
+                        <div class="description">
+                            Une étendue luxuriante de champs en terrasses, de coteaux boisés et de cascades en cascade dans les contreforts des montagnes du Haut Atlas, la vallée de l'Ourika (Vallée de l'Ourika) est une oasis naturelle à seulement une heure de la ville de Marrakech.
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/88fndqMyfMarrEJx7">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="Vol en montgolfière.jpg" alt="">
+    
+                    <div class="content">
+                        <div class="type">Vol en montgolfière</div>
+                        <div class="description">
+                            Un vol en montgolfière au-dessus de Marrakech est une expérience magique à ne pas manquer. Envolez-vous tôt le matin pour admirer le lever du soleil sur la médina, les palmeraies et les majestueuses montagnes de l'Atlas. Les vols durent environ une heure, suivis d'un petit-déjeuner traditionnel dans un cadre pittoresque.
+                        </div>
+                        <div class="button">
+                            <a href="https://maps.app.goo.gl/PVSj31Zk9DQA8PzcA">Localisation</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="thumbnail">
+    
+                <div class="item">
+                    <img src="Jemaa el-Fna.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Jardin Majorelle.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="Vallée de l'Ourika.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Vol en montgolfière.jpg" alt="">
+                </div>
+    
+            </div>
+    
+    
+            <div class="nextPrevArrows">
+                <button class="prev"> < </button>
+                <button class="next"> > </button>
+            </div>
+    
+    
+        </div>
+    </section> 
+    <section class="cafe">
+        <div class="titreFIN"> 
+            <h1>Cafées et restaurants</h1>
+            <h3>Savourez des instants délicieux à Agadir, où chaque café et restaurant vous plonge dans une expérience culinaire unique!</h3>
+        </div>
+        <div class="resto">
+            <div class="carte">
+                <img src="Café STAH.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Café STAH</h3>
+                    <p>
+                        un lieu branché situé dans le quartier de Guéliz, connu pour son ambiance moderne et artistique. Il propose une sélection de cafés, thés et plats légers, ainsi que des pâtisseries. Avec un bon accès Wi-Fi, c'est un endroit idéal pour se détendre ou travailler. Le café accueille également des événements culturels, ce qui en fait un point de rencontre populaire pour les habitants et les touristes.
+                    </p>
+                    <a href="https://maps.app.goo.gl/v3GhS3aaYYpXh6Le9" class="btn">Localisation</a>
+                </div>
+            </div>
+            <div class="carte">
+                <img src="Café OTTO.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Café OTTO</h3>
+                    <p>
+                        Un café moderne situé à Guéliz, connu pour son ambiance accueillante et son décor élégant. Il propose une variété de cafés, thés, jus frais, ainsi que des plats légers et des pâtisseries. C'est un lieu populaire pour se détendre, travailler et participer à des événements culturels.
+                    </p>
+                    <a  href="https://maps.app.goo.gl/LfA3GY23fWLzVEvB6" class="btn">Localisation</a>
+                </div>
+            </div>
+            <div class="carte">
+                <img src="Rooftop garden.jpg" alt="">
+                <div class="carte-content">
+                    <h3>Rooftop garden</h3>
+                    <p>
+                        Un rooftop garden est un jardin situé sur le toit d'un bâtiment, offrant un espace de détente avec une vue sur la ville. Ces jardins sont souvent aménagés avec des plantes, des fleurs et des zones de repos. Ils contribuent à améliorer la qualité de l'air et à réduire la chaleur urbaine, tout en créant un havre de paix en milieu urbain.   
+                    </p>
+                    <a href="https://maps.app.goo.gl/VqWmVjJVZvMPRFwM9" class="btn">Localisation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h1 id="Contact">Contact</h1>
+        <div class="contact1">
+            
+                <div class="instagram"><img src="instagram.png" onclick="lien('https://www.instagram.com/')"><br><a href="https://www.instagram.com/" target="_blank">Instagram</a></div>
+                <div class="facebook"><img src="facebook.png" onclick="lien('https://fr-fr.facebook.com/')"><br><a href="https://fr-fr.facebook.com/" target="_blank">Facebook</a></div>
+                <div class="gmail"><img src="Gmail.png" onclick="lien('https://mail.google.com/mail/u/0/')"><br><a href="https://mail.google.com/mail/u/0/" target="_blank">Email</a></div>
+                <div class="linkedin"><img src="linkedin.png" onclick="lien('https://www.linkedin.com/feed/')"><br><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></div>
+
+            
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <a href="index.html">Acceil</a>
+            <a href="apropos.html">A propos</a>
+            <a href="#villes">villes</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="#experience">Expériences</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+<script src="marrakech.js"></script>
     </body>
 </html>
