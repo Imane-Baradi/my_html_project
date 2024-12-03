@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(pexels-marie-lemaistre-215839-1161927.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    max-width: 30rem;
+    background-color: transparent;
+    padding: 3rem 2rem ;
+    border-radius: 10px;  
+    border: rgba(9, 24, 99, 0.391) solid 2px;
+    backdrop-filter: blur(10px); 
+
+
+    overflow: hidden;
+    position: relative;
+}
+.wrapper{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 200%;
+}
+section{
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.login, .register{
+    flex: 1;
+}
+.hidden{
+    transform: translateX(-50%);
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(9, 24, 99);
+}
+form{
+    margin: 2rem 0;
+}
+.inputbox{
+    position: relative;
+    margin: 1rem 0;
+}
+.inputbox input{ 
+width: 100%;
+height: 3rem;
+border: none;
+outline: none;
+border-bottom:rgba(9, 24, 99, 0.391) solid 2px;
+background-color: transparent;
+color: rgba(9, 24, 99, 0.391);
+font-size: 1.5;
+font-weight: 500;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 5px;
+    top: 20px;   
+}
+input:focus ~label,
+input:valid ~label{
+    top: -5px;
+}
+.forgot{
+    display: flex;
+    justify-content: center;
+
+}
+.forgot a{
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 4px;
+    text-transform: lowercase;
+    color: rgb(9, 24, 99);
+   font-weight: 600; 
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    margin: 1.5rem 0;
+}
+button:hover {
+    background-color: #449bb8; /* Changer couleur au survol */
+}
+.register-option{
+    display: flex;
+    justify-content: center;
+}
+.register-option a{
+    text-decoration: none;
+    color: rgb(9, 24, 99);
+    font-weight: 600;
+    margin-left: 4px;
+}
+.register-option a:hover{
+    text-decoration: underline;
+}
+
+#cookie-banner {
+    width: 100%;
+    max-width: 25rem;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    background-color: rgba(8, 74, 113, 0.17);
+    padding: 0.5rem 0.5rem ;
+    border-radius: 10px;
+    border:  rgba(8, 74, 113, 0.17) solid 0.5px;
+    backdrop-filter: blur(1px); 
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    display: none; 
+    text-align: center;
+}
+
+#cookie-banner button {
+    width: 20%;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    margin: 0.1rem 0;
+}
+
+#cookie-banner button:hover {
+    background-color: #449bb8; /* Changer couleur au survol */
+}
